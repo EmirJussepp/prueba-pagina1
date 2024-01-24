@@ -43,16 +43,16 @@
 
 
     <header>
-        <nav class="navbar navbar-expand-lg fixed-top pt-5">
-            <div class="container red-border">
+        <nav class="navbar navbar-expand-lg fixed-top pt-5  ">
+            <div class="container">
                 <a class="navbar-brand" href="#">
                     <img src="img/logoBluPadel3.png" class="" alt="" srcset="">
                 </a>
-                <button class="navbar-toggler border-0 hamburger-button" type="button" data-bs-toggle="collapse"
+                <button class="navbar-toggler  hamburger-button" type="button" data-bs-toggle="collapse"
                     data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false"
                     aria-label="Toggle navigation" ->
                     <div class="hamburger">
-                        <input class="checkbox" type="checkbox" id="btn-check" />
+                        <input class="checkbox" type="checkbox" />
                         <svg fill="none" viewBox="0 0 50 50" he.ight="50" width="50">
                             <path class="lineTop line" stroke-linecap="round" stroke-width="4" stroke="black"
                                 d="M6 11L44 11"></path>
@@ -65,19 +65,12 @@
                 </button>
 
 
-
-
-
-
                 <!-- Barra de navegación colapsada -->
                 <div class="collapse navbar-collapse navbar-collapse-custom d-lg-none" id="navbarNav">
                     <!-- Botón de cierre (cruz) -->
                     <ul class="navbar-nav ms-lg-auto py-5">
                         <li class="nav-item">
-                            <a class="nav-link active" href="#inicio">Incio</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#seccionClub">El Club</a>
+                            <a class="nav-link active" href="#seccionClub">El Club</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link " href="#services">Servicios</a>
@@ -109,13 +102,7 @@
                 </div>
 
 
-
-
             </div>
-
-
-
-
 
         </nav>
 
@@ -205,9 +192,10 @@
             <hr class="divider" data-aos="fade-up" />
             <div class="row text-white align-items-lg-center pt-5">
                 <article class="col-12 col-lg-5" data-aos="fade-right">
-                    <div class="pt-3">
-                        <h2 class="fw-bold text-uppercase">Diseño integrado con la naturaleza</h2>
-                        <p class="fs-5">En
+                    <div class="pt-3 ">
+                        <h2 class="fw-bold text-uppercase animate__animated animate__fadeInDown"
+                            style="animation-delay: 0.5s;">Diseño integrado con la naturaleza</h2>
+                        <p class="fs-5 animate__animated animate__fadeInDown" style="animation-delay: 1s;   ">En
                             nuestro complejo de pádel, buscamos crear un espacio único donde el deporte se entrelaza
                             de forma armoniosa con la naturaleza,
                             brindando a nuestros clientes una experiencia inolvidable de ocio y conexión con amigos
@@ -215,9 +203,9 @@
                     </div>
 
                 </article>
-                <article class="col-12 col-lg-7" data-aos="fade-left">
+                <article class="col-12 col-lg-7" >
                     <div class="cuadrado-con-estilo">
-                        <img class="img-fluid rounded zoomable  " src="img/img-pag1.jpg"
+                        <img class="img-fluid rounded zoomable" data-aos="fade-left" src="img/img-pag1.jpg"
                             alt="Diseño integrado con la naturaleza">
                     </div>
                 </article>
@@ -225,24 +213,25 @@
 
                 <article class="col-lg-5 order-lg-1 pt-5" data-aos="fade-right">
                     <h2 class="fw-bold text-uppercase">Ocio social en todas las dimensiones</h2>
-                    <p class="fs-5">En nuestro
+                    <p class="fs-5 animate__animated animate__fadeInDown" style="animation-delay: 1s;   ">En nuestro
                         más allá del deporte, nuestro complejo ofrece diversas áreas de ocio social. Desde asadores
                         para disfrutar al aire libre y hasta un restó bar,
                         hasta espacios de descanso para socializar con amigos, creamos un ambiente que va más allá
                         de la competencia deportiva.</p>
                 </article>
-                <article class="col-lg-7 col-12 pt-5" data-aos="fade-right">
+                <article class="col-lg-7 col-12 pt-5">
 
                     <div class="cuadrado-con-estilo">
-                        <img class="img-fluid rounded zoomable " src="img/img-pag1.jpg"
+                        <img class="img-fluid rounded zoomable " data-aos="fade-right" src="img/img-pag1.jpg"
                             alt="Ocio social en todas las dimensiones:">
                     </div>
                 </article>
 
                 <article class="col-12 col-lg-5 pt-5 ">
                     <div class="pt-3 ">
-                        <h2 class="fw-bold text-uppercase" data-aos="fade-left">Restó bar con toque gourmet</h2>
-                        <p class="fs-5" data-aos="fade-left">Sobre
+                        <h2 class="fw-bold text-uppercase animate__animated animate__fadeInDown" data-aos="fade-left"
+                            style="animation-delay: 0.5s;">Restó bar con toque gourmet</h2>
+                        <p class="fs-5 animate__animated animate__fadeInDown" style="animation-delay: 1s;   ">Sobre
                             la calle Los Cerezos, se sitúa el ingreso a nuestro restaurante-bar, que ofrece una
                             experiencia gastronómica única.
                             Desde platos pensados para la energía post-partido hasta opciones gourmet, nuestro menú
@@ -521,15 +510,10 @@
 
     <script src="lightbox-plus-jquery.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
-    <script src="script.js"></script>
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="script.js"></script>
 
-    <script>
-        AOS.init({
-            duration: 1500,
 
-        })
-    </script>
 
 </body>
 
