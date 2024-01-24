@@ -1,0 +1,1193 @@
+:root {
+  --colorLila: #56588f;
+  --colorRojo: #d6241c;
+  --colorazul: #4349A2;
+  --FuentePrincipal: 'Barlow', sans-serif;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: var(--FuentePrincipal);
+  margin-top: 0 !important;
+  background-color: black;
+
+}
+
+a {
+  text-decoration: none;
+}
+
+section[id] {
+  scroll-margin-top: 70px;
+}
+
+header .navbar-scrolled {
+  background-color: black !important;
+
+  box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.5) !important;
+  transition: all 0.5s ease;
+  border: 0 !important;
+
+}
+
+/* NAVBAR */
+
+.navbar-brand img {
+  width: auto;
+  height: 8rem;
+  margin-left: -40px;
+}
+
+
+.nav-item {
+  margin-left: 1.5rem;
+  transition: all .3s ease-out;
+}
+
+.nav-link {
+  color: white !important;
+  font-size: 1.1rem;
+  text-transform: uppercase;
+  font-weight: bold;
+  letter-spacing: 1.7px;
+}
+
+.nav-item .active {
+  color: var(--colorRojo) !important;
+}
+
+.nav-link:hover {
+  color: var(--colorRojo) !important;
+}
+
+
+
+
+.navbar .container {
+  border-radius: 1rem;
+  height: 95px;
+
+}
+
+.red-border {
+  border: solid 3px #d6241c;
+
+}
+
+/* Añade esta clase personalizada */
+
+
+/* CARROUSEL */
+
+[data-aos] {
+  opacity: 0;
+  transition: opacity 0.10s ease-in-out;
+}
+
+[data-aos].aos-animate {
+  opacity: 3;
+}
+
+
+.carousel-inner img {
+  height: 100vh;
+  width: auto;
+  object-fit: cover;
+  object-position: center center;
+}
+
+.carousel-item {
+  height: 98vh;
+  min-height: 300px;
+
+}
+
+.carousel-caption {
+  bottom: 330px;
+  z-index: 2;
+
+}
+
+.carousel-caption h3 {
+  font-weight: 300;
+  text-transform: uppercase;
+  font-size: 25px;
+
+}
+
+.carousel-caption h5 {
+  font-size: 55px;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  margin-top: 25px;
+  font-weight: 700;
+
+}
+
+.carousel-caption p {
+  width: 100%;
+  margin: auto;
+  text-transform: uppercase;
+  font-size: 22px;
+  line-height: 1.9%;
+  margin-top: 30px;
+  text-wrap: balance;
+  line-height: normal;
+  
+}
+
+h5 span {
+  color: var(--colorazul);
+  font-size: 64px;
+}
+
+.cuadrado-con-estilo {
+  position: relative;
+  overflow: hidden;
+}
+
+.cuadrado-con-estilo img {
+  object-fit: cover;
+  object-position: center center;
+  filter: brightness(100%) contrast(100%);
+  transition: transform 0.3s ease;
+  /* Agrega una transición a la propiedad transform */
+}
+
+.cuadrado-con-estilo:hover img {
+  transform: scale(1.2);
+  /* Aplica un zoom del 20% al pasar el ratón */
+}
+
+
+
+
+/*Seccion Club0*/
+
+/* Seccion Sevicios*/
+.page-section {
+  margin-top: 3rem;
+  padding: 8rem 0;
+  background-color: var(--colorazul) !important;
+
+
+}
+
+hr.divider {
+
+  max-width: 3.25rem;
+  margin: 1.5rem auto;
+  margin-top: 1.5rem;
+  margin-right: auto;
+  margin-bottom: 1.5rem;
+  margin-left: auto;
+  color: var(--colorRojo) !important;
+  opacity: 1;
+}
+
+/*----------------------------------------------------------------------------------------------*/
+/*MEDIA QUERY*/
+/*----------------------------------------------------------------------------------------------*/
+
+/* Estilos para pantallas grandes (mayor a 1200px) */
+@media (min-width: 1200px) {
+
+  .carousel-control-prev-icon, .carousel-control-next-icon {
+    margin-top: 80px;
+  }
+
+
+  .carousel-item {
+    height: 95vh;
+    min-height: 300px;
+  
+  }
+  
+  .carousel-caption {
+    bottom: 320px;
+    z-index: 2;
+  
+  }
+  
+  .carousel-caption h3 {
+    font-weight: 250;
+    text-transform: uppercase;
+    font-size: 25px;
+  
+  }
+  
+  .carousel-caption h5 {
+    font-size: 45px;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    margin-top: 25px;
+    font-weight: 700;
+  
+  }
+  
+  h5 span {
+    color: var(--colorazul);
+    font-size: 54px;
+  }
+  .carousel-caption p {
+    width: 100%;
+    margin: auto;
+    text-transform: uppercase;
+    font-size: 20px;
+    line-height: 1.9%;
+    margin-top: 30px;
+    text-wrap: balance;
+    line-height: normal;
+    
+  }
+
+}
+
+/* Estilos para pantallas medianas (entre 992px y 1199px) */
+@media (min-width: 992px) and (max-width: 1199px) {
+
+  .nav-item {
+    margin-left: 0.4rem;
+    transition: all .3s ease-out;
+  }
+
+  .carousel-control-prev-icon, .carousel-control-next-icon {
+    margin-top: 80px;
+  }
+
+
+  .carousel-item {
+    height: 85vh;
+    min-height: 300px;
+  
+  }
+  
+  .carousel-caption {
+    bottom: 255px;
+    z-index: 2;
+  
+  }
+  
+  .carousel-caption h3 {
+    font-weight: 250;
+    text-transform: uppercase;
+    font-size: 25px;
+  
+  }
+  
+  .carousel-caption h5 {
+    font-size: 45px;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    margin-top: 25px;
+    font-weight: 700;
+  
+  }
+  
+  h5 span {
+    color: var(--colorazul);
+    font-size: 54px;
+  }
+  .carousel-caption p {
+    width: 100%;
+    margin: auto;
+    text-transform: uppercase;
+    font-size: 20px;
+    line-height: 1.9%;
+    margin-top: 30px;
+    text-wrap: balance;
+    line-height: normal;
+    
+  }
+  
+}
+
+/* Estilos para pantallas pequeñas (entre 768px y 991px) */
+@media (min-width: 768px) and (max-width: 991px) {
+
+  .navbar-brand img {
+    margin-left: -40px;
+  }
+
+  .navbar {
+    padding-top: 0 !important;
+
+  }
+
+  .navbar .container {
+    background-color: black;
+    max-width: 100%;
+    height: auto;
+    border: none;
+    border-radius: 0;
+  }
+
+  .navbar .nav-item .nav-link {
+    padding: 1.0rem;
+    text-align: center;
+
+  }
+
+  .navbar .nav-item .nav-link:hover {
+    color: var(--colorRojo);
+  }
+
+  .boton-turno {
+
+    margin-top: 20px;
+    border-bottom: none !important;
+
+  }
+
+
+
+  /* Añade al final de tu archivo CSS */
+  .hamburger-button {
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 0;
+    z-index: 1100;
+    /* Asegúrate de que tenga un z-index superior al menú colapsado */
+  }
+
+  .hamburger {
+    height: 50px;
+    width: 50px;
+    position: relative;
+  }
+
+  .checkbox {
+    position: absolute;
+    opacity: 0;
+    height: 100%;
+    width: 100%;
+    cursor: pointer;
+  }
+
+  .line {
+    transition: 0.5s;
+    stroke-width: 4px;
+    stroke: var(--colorRojo);
+    /* Color de la línea cuando está cerrado */
+  }
+
+  .lineTop {
+    stroke-dasharray: 40 40;
+    stroke-dashoffset: 25;
+  }
+
+  .lineBottom {
+    stroke-dasharray: 40 40;
+    stroke-dashoffset: 60;
+  }
+
+  .lineMid {
+    stroke-dasharray: 40 40;
+  }
+
+  .checkbox:checked+svg .line {
+    stroke: rgb(255, 255, 255);
+    /* Color de la línea cuando está abierto */
+  }
+
+  .checkbox:checked+svg .lineTop {
+    stroke-dashoffset: 0;
+    transform-origin: left;
+    transform: rotateZ(45deg) translate(-7px, -5px);
+  }
+
+  .checkbox:checked+svg .lineMid {
+    stroke-dashoffset: 40;
+  }
+
+  .checkbox:checked+svg .lineBottom {
+    stroke-dashoffset: 0;
+    transform-origin: left;
+    transform: rotateZ(-45deg) translate(-5px, 5px);
+  }
+
+  /* Añadir a tu archivo de estilos CSS */
+
+  /* Estilo para el menú colapsado */
+  .navbar-collapse-custom {
+    background-color: rgba(0, 0, 0, 0.9);
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+    transition: height 0.3s ease;
+  }
+
+  /* Estilo para los enlaces en el menú colapsado */
+  .navbar-collapse-custom .navbar-nav .nav-link {
+    color: white;
+    margin: 10px 0;
+  }
+
+  /* Estilo para el botón en el menú colapsado */
+  .navbar-collapse-custom .navbar-nav .animated-button {
+    margin-top: 20px;
+  }
+
+  /* Estilo para el ícono del botón en el menú colapsado */
+  .navbar-collapse-custom .navbar-toggler-icon {
+    background-color: white;
+  }
+
+  /* Ajustes adicionales para centrar el contenido */
+  .navbar-custom.collapsed .navbar-collapse-custom {
+    display: none;
+  }
+
+  /* ... Otros estilos existentes ... */
+
+  .nav-item {
+    border-bottom: 1px solid var(--colorRojo);
+
+  }
+
+  .carousel-item {
+    height: 78vh;
+    min-height: 300px;
+  
+  }
+
+  .carousel-caption {
+    bottom: 200px;
+    z-index: 2;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+  }
+  .carousel-control-prev-icon, .carousel-control-next-icon {
+    margin-top: 80px;
+  }
+
+  .carousel-caption h3 {
+    font-weight: 250px;
+    text-transform: uppercase;
+    font-size: 25px;
+  
+  }
+  
+  .carousel-caption h5 {
+    font-size: 45px;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    margin-top: 25px;
+    font-weight: 700;
+  
+  }
+  
+  h5 span {
+    color: var(--colorazul);
+    font-size: 54px;
+  }
+  .carousel-caption p {
+    width: 100%;
+    margin: auto;
+    text-transform: uppercase;
+    font-size: 20px;
+    line-height: 1.9%;
+    margin-top: 30px;
+    text-wrap: balance;
+    line-height: normal;
+    
+  }
+
+  /*contacto*/
+
+  .contact-form {
+    margin-bottom: 30px;
+  }
+  .map-area {
+    width: 100%;
+    height:400px;
+    
+  }
+
+ 
+}
+
+/* Estilos para tabletas (entre 576px y 767px) */
+@media (min-width: 576px) and (max-width: 767px) {
+
+  .navbar-brand img {
+    margin-left: -40px;
+  }
+
+  .navbar {
+    padding-top: 0 !important;
+
+  }
+
+  .navbar .container {
+    background-color: black;
+    max-width: 100%;
+    height: auto;
+    border: none;
+    border-radius: 0;
+  }
+
+  .navbar .nav-item .nav-link {
+    padding: 1.0rem;
+    text-align: center;
+
+  }
+
+  .navbar .nav-item .nav-link:hover {
+    color: var(--colorRojo);
+  }
+
+  .boton-turno {
+
+    margin-top: 20px;
+    border-bottom: none !important;
+
+  }
+
+
+
+  /* Añade al final de tu archivo CSS */
+  .hamburger-button {
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 0;
+    z-index: 1100;
+    /* Asegúrate de que tenga un z-index superior al menú colapsado */
+  }
+
+  .hamburger {
+    height: 50px;
+    width: 50px;
+    position: relative;
+  }
+
+  .checkbox {
+    position: absolute;
+    opacity: 0;
+    height: 100%;
+    width: 100%;
+    cursor: pointer;
+  }
+
+  .line {
+    transition: 0.5s;
+    stroke-width: 4px;
+    stroke: var(--colorRojo);
+    /* Color de la línea cuando está cerrado */
+  }
+
+  .lineTop {
+    stroke-dasharray: 40 40;
+    stroke-dashoffset: 25;
+  }
+
+  .lineBottom {
+    stroke-dasharray: 40 40;
+    stroke-dashoffset: 60;
+  }
+
+  .lineMid {
+    stroke-dasharray: 40 40;
+  }
+
+  .checkbox:checked+svg .line {
+    stroke: rgb(255, 255, 255);
+    /* Color de la línea cuando está abierto */
+  }
+
+  .checkbox:checked+svg .lineTop {
+    stroke-dashoffset: 0;
+    transform-origin: left;
+    transform: rotateZ(45deg) translate(-7px, -5px);
+  }
+
+  .checkbox:checked+svg .lineMid {
+    stroke-dashoffset: 40;
+  }
+
+  .checkbox:checked+svg .lineBottom {
+    stroke-dashoffset: 0;
+    transform-origin: left;
+    transform: rotateZ(-45deg) translate(-5px, 5px);
+  }
+
+  /* Añadir a tu archivo de estilos CSS */
+
+  /* Estilo para el menú colapsado */
+  .navbar-collapse-custom {
+    background-color: rgba(0, 0, 0, 0.9);
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+    transition: height 0.3s ease;
+  }
+
+  /* Estilo para los enlaces en el menú colapsado */
+  .navbar-collapse-custom .navbar-nav .nav-link {
+    color: white;
+    margin: 10px 0;
+  }
+
+  /* Estilo para el botón en el menú colapsado */
+  .navbar-collapse-custom .navbar-nav .animated-button {
+    margin-top: 20px;
+  }
+
+  /* Estilo para el ícono del botón en el menú colapsado */
+  .navbar-collapse-custom .navbar-toggler-icon {
+    background-color: white;
+  }
+
+  /* Ajustes adicionales para centrar el contenido */
+  .navbar-custom.collapsed .navbar-collapse-custom {
+    display: none;
+  }
+
+  /* ... Otros estilos existentes ... */
+
+  .nav-item {
+    border-bottom: 1px solid var(--colorRojo);
+
+  }
+
+  .carousel-item {
+    height: 65vh;
+    min-height: 300px;
+  
+  }
+
+  .carousel-caption {
+    bottom: 120px;
+    z-index: 2;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+  }
+  .carousel-control-prev-icon, .carousel-control-next-icon {
+    margin-top: 140px;
+  }
+
+  .carousel-caption h3 {
+    font-weight: 250px;
+    text-transform: uppercase;
+    font-size: 22px;
+  
+  }
+  
+  .carousel-caption h5 {
+    font-size: 38px;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    margin-top: 25px;
+    font-weight: 700;
+  
+  }
+  
+  h5 span {
+    color: var(--colorazul);
+    font-size: 46px;
+  }
+  .carousel-caption p {
+    width: 100%;
+    margin: auto;
+    text-transform: uppercase;
+    font-size: 15px;
+    line-height: 1.9%;
+    margin-top: 30px;
+    text-wrap: balance;
+    line-height: normal;
+    
+  }
+
+  /*contacto*/
+
+  .contact-form {
+    margin-bottom: 30px;
+  }
+  .map-area {
+    width: 100%;
+    height:400px;
+    
+  }
+
+
+  
+
+}
+
+/* Estilos para dispositivos pequeños (menor a 576px) */
+@media (max-width: 575px) {
+
+  .navbar-brand img {
+    margin-left: -40px;
+  }
+
+  .navbar {
+    padding-top: 0 !important;
+
+  }
+
+  .navbar .container {
+    background-color: black;
+    max-width: 100%;
+    height: auto;
+    border: none;
+    border-radius: 0;
+  }
+
+  .navbar .nav-item .nav-link {
+    padding: 1.0rem;
+    text-align: center;
+
+  }
+
+  .navbar .nav-item .nav-link:hover {
+    color: var(--colorRojo);
+  }
+
+  .boton-turno {
+
+    margin-top: 20px;
+    border-bottom: none !important;
+
+  }
+
+
+
+  /* Añade al final de tu archivo CSS */
+  .hamburger-button {
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 0;
+    z-index: 1100;
+    /* Asegúrate de que tenga un z-index superior al menú colapsado */
+  }
+
+  .hamburger {
+    height: 50px;
+    width: 50px;
+    position: relative;
+  }
+
+  .checkbox {
+    position: absolute;
+    opacity: 0;
+    height: 100%;
+    width: 100%;
+    cursor: pointer;
+  }
+
+  .line {
+    transition: 0.5s;
+    stroke-width: 4px;
+    stroke: var(--colorRojo);
+    /* Color de la línea cuando está cerrado */
+  }
+
+  .lineTop {
+    stroke-dasharray: 40 40;
+    stroke-dashoffset: 25;
+  }
+
+  .lineBottom {
+    stroke-dasharray: 40 40;
+    stroke-dashoffset: 60;
+  }
+
+  .lineMid {
+    stroke-dasharray: 40 40;
+  }
+
+  .checkbox:checked+svg .line {
+    stroke: rgb(255, 255, 255);
+    /* Color de la línea cuando está abierto */
+  }
+
+  .checkbox:checked+svg .lineTop {
+    stroke-dashoffset: 0;
+    transform-origin: left;
+    transform: rotateZ(45deg) translate(-7px, -5px);
+  }
+
+  .checkbox:checked+svg .lineMid {
+    stroke-dashoffset: 40;
+  }
+
+  .checkbox:checked+svg .lineBottom {
+    stroke-dashoffset: 0;
+    transform-origin: left;
+    transform: rotateZ(-45deg) translate(-5px, 5px);
+  }
+
+  /* Añadir a tu archivo de estilos CSS */
+
+  /* Estilo para el menú colapsado */
+  .navbar-collapse-custom {
+    background-color: rgba(0, 0, 0, 0.9);
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+    transition: height 0.3s ease;
+  }
+
+  /* Estilo para los enlaces en el menú colapsado */
+  .navbar-collapse-custom .navbar-nav .nav-link {
+    color: white;
+    margin: 10px 0;
+  }
+
+  /* Estilo para el botón en el menú colapsado */
+  .navbar-collapse-custom .navbar-nav .animated-button {
+    margin-top: 20px;
+  }
+
+  /* Estilo para el ícono del botón en el menú colapsado */
+  .navbar-collapse-custom .navbar-toggler-icon {
+    background-color: white;
+  }
+
+  /* Ajustes adicionales para centrar el contenido */
+  .navbar-custom.collapsed .navbar-collapse-custom {
+    display: none;
+  }
+
+  /* ... Otros estilos existentes ... */
+
+  .nav-item {
+    border-bottom: 1px solid var(--colorRojo);
+
+  }
+
+  .carousel-item {
+    height: 58vh;
+    min-height: 300px;
+  
+  }
+
+  .carousel-caption {
+    bottom: 70px;
+    z-index: 2;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+  }
+  .carousel-control-prev-icon, .carousel-control-next-icon {
+    margin-top: 130px;
+  }
+
+  .carousel-caption h3 {
+    font-weight: 250px;
+    text-transform: uppercase;
+    font-size: 18px;
+  
+  }
+  
+  .carousel-caption h5 {
+    font-size: 35px;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    margin-top: 25px;
+    font-weight: 700;
+  
+  }
+  
+  h5 span {
+    color: var(--colorazul);
+    font-size: 39px;
+  }
+  .carousel-caption p {
+    width: 100%;
+    margin: auto;
+    text-transform: uppercase;
+    font-size: 12px;
+    line-height: 1.9%;
+    margin-top: 30px;
+    text-wrap: balance;
+    line-height: normal;
+    
+  }
+
+  /*contacto*/
+
+  .contact-form {
+    margin-bottom: 30px;
+  }
+  .map-area {
+    width: 100%;
+    height:400px;
+    
+  }
+
+  
+
+}
+
+
+
+
+
+ 
+
+
+
+
+
+
+
+
+
+
+/*
+
+.mostrar-imagen {
+  display: none;
+}
+
+.mostrar-imagen.active {
+  position: fixed;
+  left: 0;
+  display: flex;
+  top: 0;
+  z-index: 1002220;
+  width: 100%;
+  height: 100vh;
+  background-color: #00000064;
+}
+
+.mostrar-imagen.active .carousel {
+  width: 100%;
+}
+
+.mostrar-imagen.active .carousel .carousel-inner {
+  margin-top: 15rem;
+  margin-left: 30rem;
+}
+
+.mostrar-imagen.active .carousel .carousel-item img {
+  width: 60%;
+  height: 60%;
+} 
+
+*/
+
+
+
+#portfolio .container-fluid,
+#portfolio .container-sm,
+#portfolio .container-md,
+#portfolio .container-lg,
+#portfolio .container-xl,
+#portfolio .container-xxl {
+  max-width: 100%;
+}
+
+#portfolio .container-fluid .portfolio-box,
+#portfolio .container-sm .portfolio-box,
+#portfolio .container-md .portfolio-box,
+#portfolio .container-lg .portfolio-box,
+#portfolio .container-xl .portfolio-box,
+#portfolio .container-xxl .portfolio-box {
+  position: relative;
+  display: block;
+}
+
+#portfolio .container-fluid .portfolio-box .portfolio-box-caption,
+#portfolio .container-sm .portfolio-box .portfolio-box-caption,
+#portfolio .container-md .portfolio-box .portfolio-box-caption,
+#portfolio .container-lg .portfolio-box .portfolio-box-caption,
+#portfolio .container-xl .portfolio-box .portfolio-box-caption,
+#portfolio .container-xxl .portfolio-box .portfolio-box-caption {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  bottom: 0;
+  text-align: center;
+  opacity: 0;
+  color: #fff;
+  /* background: rgba(205, 13, 13, 0.9); */
+  background:rgba(38, 38, 38, 0.7);
+  transition: opacity 0.25s ease;
+  text-align: center;
+}
+
+#portfolio .container-fluid .portfolio-box .portfolio-box-caption .project-category,
+#portfolio .container-sm .portfolio-box .portfolio-box-caption .project-category,
+#portfolio .container-md .portfolio-box .portfolio-box-caption .project-category,
+#portfolio .container-lg .portfolio-box .portfolio-box-caption .project-category,
+#portfolio .container-xl .portfolio-box .portfolio-box-caption .project-category,
+#portfolio .container-xxl .portfolio-box .portfolio-box-caption .project-category {
+  font-family: "Merriweather Sans", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  font-size: 0.85rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  
+}
+
+#portfolio .container-fluid .portfolio-box .portfolio-box-caption .project-name,
+#portfolio .container-sm .portfolio-box .portfolio-box-caption .project-name,
+#portfolio .container-md .portfolio-box .portfolio-box-caption .project-name,
+#portfolio .container-lg .portfolio-box .portfolio-box-caption .project-name,
+#portfolio .container-xl .portfolio-box .portfolio-box-caption .project-name,
+#portfolio .container-xxl .portfolio-box .portfolio-box-caption .project-name {
+  font-size: 1.2rem;
+  
+}
+
+#portfolio .container-fluid .portfolio-box:hover .portfolio-box-caption,
+#portfolio .container-sm .portfolio-box:hover .portfolio-box-caption,
+#portfolio .container-md .portfolio-box:hover .portfolio-box-caption,
+#portfolio .container-lg .portfolio-box:hover .portfolio-box-caption,
+#portfolio .container-xl .portfolio-box:hover .portfolio-box-caption,
+#portfolio .container-xxl .portfolio-box:hover .portfolio-box-caption {
+  opacity: 1;
+}
+
+/*Contacto*/
+
+
+.contact-form {
+  background-color: rgb(79, 74, 74);
+  box-shadow: rgba(0, 0, 0, 0, 0.35) 0 5px 15px;
+  padding: 40px 30px;
+  border-radius: 1%;
+  
+  
+  }
+
+
+.contact-form .btn {
+  background: black;
+  border: 1px solid var(--colorRojo);
+  text-transform: uppercase;
+  font-weight: 700;
+  padding: 10px 50px;
+  letter-spacing: 2px;
+}
+.contact-form .btn:hover{
+  background: var(--colorRojo);
+  border: 1px solid black;
+
+
+}
+
+.map-area {
+ 
+  height: 608px;
+  background: #fff;
+  box-shadow: rgba(0, 0, 0, 0, 0.35) 0 5px 15px;
+  
+
+}
+.map-area iframe {
+  width: 100%;
+  height: 100%;
+  border: none;
+}
+
+/* FOOTER */
+/*:::::Pie de Pagina*/
+.pie-pagina{
+  width: 100%;
+  background-color: #0a141d;
+  
+}
+.pie-pagina .grupo-1{
+  width: 100%;
+  max-width: 1200px;
+  margin: auto;
+  display:grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-gap:50px;
+  padding: 45px 0px;
+}
+.pie-pagina .grupo-1 .box figure{
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.pie-pagina .grupo-1 .box figure img{
+  width: 250px;
+}
+.pie-pagina .grupo-1 .box h2{
+  color: #fff;
+  margin-bottom: 25px;
+  font-size: 20px;
+}
+.pie-pagina .grupo-1 .box p{
+  color: #efefef;
+  margin-bottom: 10px;
+}
+.pie-pagina .grupo-1 .red-social a{
+  display: inline-block;
+  text-decoration: none;
+  width: 45px;
+  height: 45px;
+  line-height: 45px;
+  color: #fff;
+  margin-right: 10px;
+  background-color: black;
+  text-align: center;
+  transition: all 300ms ease;
+}
+.pie-pagina .grupo-1 .red-social a:hover{
+  color: var(--colorRojo);
+}
+.pie-pagina .grupo-2{
+  background-color: #0a1a2a;
+  padding: 15px 10px;
+  text-align: center;
+  color: #fff;
+}
+.pie-pagina .grupo-2 small{
+  font-size: 15px;
+}
+@media screen and (max-width:800px){
+  .pie-pagina .grupo-1{
+      width: 90%;
+      grid-template-columns: repeat(1, 1fr);
+      grid-gap:30px;
+      padding: 35px 0px;
+  }
+}
+
+/* Section bar */
